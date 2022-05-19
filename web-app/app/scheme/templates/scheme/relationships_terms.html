@@ -10,8 +10,8 @@
         <tr><th>id элемента</th><th>термин</th><th>определение</th></tr>
     {% for answer in answers %}
         <tr>
-            <td>{{ answer.id }}</td>
-            <td><a href="{% url 'news-detail' answer.title %}">{{ answer.title }}</a></td>
+            <td><a href="{% url 'news-update' answer.id %}">{{ answer.id }}</a></td>
+            <td><a href="{% url 'news-list' answer.title %}">{{ answer.title }}</a></td>
             <td>{{ answer.body }}</td>
         </tr>
     {% endfor %}

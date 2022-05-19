@@ -1,0 +1,20 @@
+{% extends 'scheme/layout.html' %}
+{% load static %}
+
+{% block title %}
+обновление элемента
+{% endblock %}
+
+{% block therm %}
+    <h1>добавление элемента</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.body }}<br>
+        <button type="submit">изменить элемент</button>
+    </form>
+{% endblock %}
+
+{% block connection %}
+
+{% endblock %}
