@@ -1,0 +1,36 @@
+{% extends 'scheme/layout.html' %}
+{% load static %}
+
+{% block title %}
+    бд
+{% endblock %}
+
+{% block therm %}
+    <table border="1" cellpadding="5">
+        <tr><th>Id</th><th>Термин</th><th>Определение</th><th>Рисунок</th><th>Обозначение</th></tr>
+    {% for el in therm %}
+        <tr>
+            <td width="10%">{{ el.id }}</td>
+            <td width="10%">{{ el.title }}</td>
+            <td width="60%">{{ el.body }}</td>
+            <td width="10%"><img src="{{ el.image.url }}"  alt="{{ el.image.url }}" width="100px" height="100px"/></td>
+            <td width="10%">{{ el.mark }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}
+
+{% block connection %}
+    <table border="1" cellpadding="5">
+        <tr><th>Id</th><th>Связь</th><th>Определение</th><th>Рисунок</th><th>Обозначение</th></tr>
+        {% for el in connection %}
+            <tr>
+                <td width="10%">{{ el.id }}</td>
+                <td width="10%">{{ el.title }}</td>
+                <td width="60%">{{ el.body }}</td>
+                <td width="10%"><img src="{{ el.image.url }}"  alt="{{ el.image.url }}" width="100px" height="100px"/></td>
+                <td width="10%">{{ el.mark }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

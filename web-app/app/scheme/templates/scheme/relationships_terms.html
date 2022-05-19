@@ -1,0 +1,22 @@
+{% extends 'scheme/layout.html' %}
+{% load static %}
+
+{% block title %}
+    бд
+{% endblock %}
+
+{% block therm %}
+    <table border="1" width="100%">
+        <tr><th>id элемента</th><th>термин</th><th>определение</th></tr>
+    {% for answer in answers %}
+        <tr>
+            <td>{{ answer.id }}</td>
+            <td><a href="{% url 'news-detail' answer.title %}">{{ answer.title }}</a></td>
+            <td>{{ answer.body }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}
+
+{% block connection %}
+{% endblock %}

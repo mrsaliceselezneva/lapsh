@@ -1,0 +1,23 @@
+{% extends 'scheme/layout.html' %}
+{% load static %}
+
+{% block title %}
+    добавление записи
+{% endblock %}
+
+{% block therm %}
+    <h1>добавление элемента</h1>
+     <form method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+         {{ form.title }}<br>
+         {{ form.body }}<br>
+         {{ form.image }}<br>
+         {{ form.mark }}<br>
+         <span>{{ error }}</span>
+         <button type="submit">добавить элемент</button>
+     </form>
+{% endblock %}
+
+{% block connection %}
+
+{% endblock %}

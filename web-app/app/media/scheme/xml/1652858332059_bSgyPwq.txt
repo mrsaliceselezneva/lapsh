@@ -1,0 +1,30 @@
+<mxGraphModel>
+  <root>
+    <Diagram label="My Diagram" href="http://www.jgraph.com/" id="0">
+      <mxCell />
+    </Diagram>
+    <Layer label="Default Layer" id="1">
+      <mxCell parent="0" />
+    </Layer>
+    <Container label="lol" href="" id="3">
+      <mxCell style="swimlane" vertex="1" connectable="0" parent="1">
+        <mxGeometry x="360" y="120" width="200" height="270" as="geometry" />
+      </mxCell>
+    </Container>
+    <Shape label="Shape" href="" id="2">
+      <mxCell style="ellipse" vertex="1" parent="3">
+        <mxGeometry x="40" y="60" width="60" height="60" as="geometry" />
+      </mxCell>
+    </Shape>
+    <Rect label="Rectangle" href="" id="4">
+      <mxCell vertex="1" parent="3">
+        <mxGeometry x="80" y="180" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="5">
+      <mxCell edge="1" parent="3" source="2" target="4">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,80 @@
+<mxGraphModel>
+  <root>
+    <Diagram label="My Diagram" href="http://www.jgraph.com/" id="0">
+      <mxCell />
+    </Diagram>
+    <Layer label="Default Layer"`` id="1">
+      <mxCell parent="0" />
+    </Layer>
+    <Rect label="Rectangle" href="" id="2">
+      <mxCell parent="1" vertex="1">
+        <mxGeometry x="280" y="10" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Shape label="Shape" href="" id="3">
+      <mxCell style="ellipse" parent="1" vertex="1">
+        <mxGeometry x="290" y="90" width="60" height="60" as="geometry" />
+      </mxCell>
+    </Shape>
+    <Connector label="" href="" id="4">
+      <mxCell parent="1" source="2" target="3" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Rect label="Rectangle" href="" id="6">
+      <mxCell parent="1" vertex="1">
+        <mxGeometry x="280" y="180" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="7">
+      <mxCell parent="1" source="3" target="6" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Shape label="Shape" href="" id="8">
+      <mxCell style="rhombus" parent="1" vertex="1">
+        <mxGeometry x="290" y="250" width="60" height="60" as="geometry" />
+      </mxCell>
+    </Shape>
+    <Connector label="" href="" id="11">
+      <mxCell parent="1" source="6" target="8" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Rect label="Rectangle" href="" id="12">
+      <mxCell parent="1" vertex="1">
+        <mxGeometry x="400" y="260" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="13">
+      <mxCell parent="1" source="8" target="12" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Shape label="Shape" href="" id="14">
+      <mxCell style="ellipse" parent="1" vertex="1">
+        <mxGeometry x="170" y="250" width="60" height="60" as="geometry" />
+      </mxCell>
+    </Shape>
+    <Connector label="" href="" id="15">
+      <mxCell parent="1" source="8" target="14" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Rect label="Rectangle" href="" id="16">
+      <mxCell parent="1" vertex="1">
+        <mxGeometry x="280" y="360" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="17">
+      <mxCell parent="1" source="12" target="16" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Connector label="" href="" id="18">
+      <mxCell parent="1" source="14" target="16" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>

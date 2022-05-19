@@ -1,0 +1,30 @@
+{% extends 'scheme/layout.html' %}
+{% load static %}
+
+{% block title %}
+    бд
+{% endblock %}
+
+{% block therm %}
+    <table border="1" width="100%">
+        <tr>
+            <th>id</th>
+            <th>термин1</th>
+            <th>термин2</th>
+            <th>связь</th>
+        </tr>
+        {% for therm in therms %}
+            {% if therm.web == request.path %}
+                <tr>
+                    <td>{{ therm.id }}</td>
+                    <td>{{ therm.title }}</td>
+                    <td>{{ therm.therm_title }}</td>
+                    <td>{{ therm.connection }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+{% endblock %}
+
+{% block connection %}
+{% endblock %}
