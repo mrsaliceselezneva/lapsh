@@ -1,0 +1,65 @@
+<mxGraphModel>
+  <root>
+    <Diagram label="My Diagram" href="http://www.jgraph.com/" id="0">
+      <mxCell />
+    </Diagram>
+    <Layer label="Default Layer" id="1">
+      <mxCell parent="0" />
+    </Layer>
+    <Container label="User" href="" id="2">
+      <mxCell style="swimlane" parent="1" vertex="1" connectable="0">
+        <mxGeometry x="80" y="50" width="200" height="200" as="geometry" />
+      </mxCell>
+    </Container>
+    <Rect label="Browser" href="" id="4">
+      <mxCell parent="2" vertex="1">
+        <mxGeometry x="60" y="40" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Rect label="User" href="" id="7">
+      <mxCell parent="2" vertex="1">
+        <mxGeometry x="60" y="110" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="11">
+      <mxCell parent="2" source="7" target="4" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Container label="Container" href="" id="3">
+      <mxCell style="swimlane" parent="1" vertex="1" connectable="0">
+        <mxGeometry x="400" y="60" width="200" height="200" as="geometry" />
+      </mxCell>
+    </Container>
+    <Rect label="Server" href="" id="5">
+      <mxCell parent="3" vertex="1">
+        <mxGeometry x="60" y="50" width="80" height="40" as="geometry" />
+      </mxCell>
+    </Rect>
+    <Connector label="" href="" id="6">
+      <mxCell parent="1" source="4" target="5" edge="1">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+    </Connector>
+    <Container label="DB" href="" id="12">
+      <mxCell style="swimlane" parent="1" vertex="1" connectable="0">
+        <mxGeometry x="240" y="300" width="200" height="200" as="geometry" />
+      </mxCell>
+    </Container>
+    <Shape label="БД" href="" id="13">
+      <mxCell style="cylinder" parent="12" vertex="1">
+        <mxGeometry x="70" y="70" width="60" height="60" as="geometry" />
+      </mxCell>
+    </Shape>
+    <Connector label="" href="" id="15">
+      <mxCell parent="1" source="5" target="13" edge="1">
+        <mxGeometry relative="1" as="geometry">
+          <mxPoint x="490" y="200" as="sourcePoint" />
+          <Array as="points">
+            <mxPoint x="490" y="330" />
+          </Array>
+        </mxGeometry>
+      </mxCell>
+    </Connector>
+  </root>
+</mxGraphModel>
